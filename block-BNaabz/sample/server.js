@@ -4,14 +4,6 @@ var logger = require('morgan')
 var mongoose = require('mongoose');
 
 // connect to database
-/*
-mongoose.connect('mongodb://127.0.0.1:27017/sample' ,
-    // {useNewUrlParser: true, useUnifiedTopology: true},
-    (err) => {
-        console.log(err ? err : "Connected to database");
-    }
-);
-*/
 
 mongoose.connect('mongodb://127.0.0.1:27017/test')
 .then(() => console.log('Connected'))
